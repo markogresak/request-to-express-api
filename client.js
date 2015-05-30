@@ -15,7 +15,9 @@ var exampleData = {
 
 request.get({
   url: 'http://localhost:3000/api',
-  data: exampleData
+  form: {
+    data: exampleData
+  }
 }, function (err, httpResponse, body) {
   console.log('response data:', body);
 });
